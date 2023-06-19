@@ -1,0 +1,30 @@
+@media (max-width: 1195.5px) {
+  /** Blog */
+}
+
+@media (max-width: 991px) {
+  /** Navbar */
+  .header-scrolled {
+    height: auto;
+  }
+
+  .header_wrapper .navbar-collapse {
+    margin-top: -0.125rem;
+  }
+
+  .header_wrapper .nav-item .nav-link {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  /** Custome CSS */
+}
+
+@media (max-width: 575.5px) {
+  /** Blog */
+}
+
+@media (max-width: 390px) {
+  /** Top banner */
+}

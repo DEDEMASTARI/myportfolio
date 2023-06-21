@@ -142,6 +142,7 @@ i {
 }
 
 /** Navbar */
+
 .header_wrapper .navbar {
   padding: 0.5rem 0;
   -o-transition: all 0.2s linear;
@@ -250,7 +251,12 @@ i {
   font-size: 1.25rem;
   line-height: 1.5rem;
   text-align: center;
+  cursor: pointer;
   border-radius: 0.5rem;
   margin-bottom: 0.5rem;
   background: var(--bg-white);
+}
+
+.about_wrapper .p-2:hover {
+  transform: scale(1.1);
 }

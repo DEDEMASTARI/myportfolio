@@ -17,9 +17,11 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive-style.css" />
-    <title>Document</title>
+    <title>Dede Mastari</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="90">
+    <!-- <body> -->
+    <!-- Navbar section -->
     <header class="header_wrapper">
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
@@ -33,10 +35,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <!-- <span class="navbar-toggler-icon"></span> -->
             <i class="fas fa-stream"></i>
-            <!-- <i class="fa-circle-chevron-down"></i> -->
-            <!-- <span class="fas fa-bars"></span> -->
           </button>
           <div
             class="collapse navbar-collapse justify-content-end"
@@ -68,6 +67,34 @@
         </div>
       </nav>
     </header>
+    <!-- End of navbar section -->
+
+    <!-- Banner section -->
+    <section class="banner_wrapper" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 order-lg-1 order-2 banner-content">
+            <h2 class="position-relative">hello</h2>
+            <h1>i'm dede mastari</h1>
+            <h5>and i'm frontend developer.</h5>
+            <div class="mt-5">
+              <a class="main-btn primary-btn" href="#">Hire Me</a>
+              <a class="main-btn secondary-btn ms-4" href="#download-cv"
+                >Get CV</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-5 order-lg-2 order-1">
+            <img
+              src="assets/img/profil.png"
+              class="img-fluid"
+              alt="banner image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of banner section -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
@@ -75,5 +102,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

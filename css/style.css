@@ -21,6 +21,7 @@
   --text-light: #faf8ff;
   --text-black: #000;
   --text-gray: #777;
+  --text-custome: #acacac;
 
   /** Font family*/
   --primary-font: "Fira Code", san-serif;
@@ -48,7 +49,6 @@ body {
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 1rem;
-
   line-height: 3rem;
   text-align: center;
   cursor: pointer;
@@ -127,7 +127,7 @@ h5 {
 }
 
 p {
-  color: var(--text-white);
+  color: var(--text-custome);
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
@@ -234,4 +234,23 @@ i {
   left: 25%;
   background: var(--bg-white);
   overflow-x: hidden;
+}
+
+/** About */
+.about_wrapper {
+  padding-top: 6rem;
+}
+
+.about_wrapper .photo-profile {
+  border-radius: 50%;
+}
+
+.about_wrapper .p-2 {
+  width: 9rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  background: var(--bg-white);
 }

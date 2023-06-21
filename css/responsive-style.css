@@ -55,6 +55,12 @@
   /** Blog */
 }
 
+@media (max-width: 495px) {
+  /** About */
+  .about_wrapper .d-flex {
+    width: 20rem;
+  }
+}
 @media (max-width: 390px) {
   /** Top banner */
 }

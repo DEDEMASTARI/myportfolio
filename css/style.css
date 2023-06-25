@@ -278,7 +278,11 @@ i {
 
 .services_wrapper .card:hover {
   box-shadow: 0 0.9375rem 1.875rem rgb(77 87 222/30%);
-  background: var(--bg-gray);
+  background: var(--bg-white);
+}
+
+.services_wrapper .card .text p {
+  color: var(--text-gray);
 }
 
 /* .header_wrapper {

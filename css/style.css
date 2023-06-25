@@ -185,9 +185,17 @@ i {
   display: inline-block;
 }
 
+/* .header_wrapper .navbar-brand:hover {
+  font-weight: 600;
+  transform: scale(1.1);
+  color: var(--primary-color);
+} */
+
 /** membuat tulisan menu navbar menjadi biru ketika disentuh kursor */
 .header_wrapper .nav-item .nav-link.active,
 .header_wrapper .nav-item .nav-link:hover {
+  font-weight: 600;
+  transform: scale(1.2);
   color: var(--primary-color);
 }
 
@@ -285,18 +293,92 @@ i {
   color: var(--text-gray);
 }
 
-/* .header_wrapper {
-  border: solid 3px green;
-} */
+/** Project */
+.project_wrapper {
+  padding-top: 6rem;
+}
 
-/* .banner_wrapper {
-  border: solid 3px green;
-} */
+.project_wrapper .nav-link {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  margin-right: 0.25rem;
+  color: var(--text-gray);
+  text-transform: uppercase;
+}
 
-/* .about_wrapper {
-  border: solid 3px green;
-} */
+.project_wrapper .nav-link.active {
+  color: var(--text-white);
+  background-color: transparent;
+}
 
+.project_wrapper .portfolio-img {
+  position: relative;
+  cursor: pointer;
+}
+
+.project_wrapper .portfolio-img .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.project_wrapper .portfolio-img:hover .overlay {
+  background: rgba(77, 87, 222, 0.5);
+}
+
+.project_wrapper .portfolio-img .overlay i {
+  font-size: 6.25rem;
+  color: var(--text-white);
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.project_wrapper .portfolio-img:hover .overlay i {
+  opacity: 1;
+  visibility: visible;
+  top: 50%;
+  left: 50%;
+}
+
+.header_wrapper {
+  border: solid 3px green;
+}
+
+.banner_wrapper {
+  border: solid 3px green;
+}
+
+.about_wrapper {
+  border: solid 3px green;
+}
+
+.services_wrapper {
+  border: solid 3px green;
+}
+
+.project_wrapper {
+  border: solid 3px green;
+}
 /* .about_wrapper .row {
   border: solid 2px red;
 } */

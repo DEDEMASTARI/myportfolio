@@ -149,10 +149,8 @@ i {
   transition: all 0.2s linear;
 }
 
-/** ukuran gambar navbar-brand */
-.header_wrapper .navbar-brand img {
-  max-width: 10rem;
-  height: auto;
+.header_wrapper .navbar-brand .img:hover {
+  transform: rotate(45deg);
 }
 
 /** menghilangkan border button navbar-toggler */
@@ -172,7 +170,14 @@ i {
   font-weight: 500;
   text-transform: uppercase;
   color: var(--text-white);
-  display: inline-block;
+  /* display: inline-block; */
+}
+
+/** ukuran gambar navbar-brand */
+.header_wrapper .navbar-brand img {
+  /* border-radius: 0.5rem; */
+  max-width: 5rem;
+  height: auto;
 }
 
 /** format font di navbar */
@@ -360,25 +365,26 @@ i {
   left: 50%;
 }
 
-.header_wrapper {
+/* .header_wrapper {
   border: solid 3px green;
-}
+} */
 
-.banner_wrapper {
+/* .banner_wrapper {
   border: solid 3px green;
-}
+} */
 
-.about_wrapper {
+/* .about_wrapper {
   border: solid 3px green;
-}
+} */
 
-.services_wrapper {
+/* .services_wrapper {
   border: solid 3px green;
-}
+} */
 
-.project_wrapper {
+/* .project_wrapper {
   border: solid 3px green;
-}
+} */
+
 /* .about_wrapper .row {
   border: solid 2px red;
 } */

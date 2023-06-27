@@ -63,4 +63,7 @@
 }
 @media (max-width: 390px) {
   /** Top banner */
+  .banner_wrapper .banner-content h2::after {
+    left: 34%;
+  }
 }

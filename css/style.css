@@ -135,6 +135,7 @@ p {
 
 a {
   text-decoration: none;
+  color: var(--primary-color);
 }
 
 i {
@@ -166,7 +167,7 @@ i {
 /** format font di navbar-brand */
 .header_wrapper .navbar-brand {
   font-family: var(--primary-font);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   text-transform: uppercase;
   color: var(--text-white);
@@ -365,6 +366,97 @@ i {
   left: 50%;
 }
 
+/** Contact */
+.contact_wrapper {
+  padding-top: 6rem;
+  background-image: var(--gradient-2);
+}
+
+.container .contact_info {
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.container .contact_info .box {
+  position: relative;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.container .contact_info .box .icon {
+  min-width: 4rem;
+  height: 4rem;
+  background: var(--bg-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.8rem;
+}
+
+.container .contact_info .box .icon:hover {
+  transform: rotate(15deg);
+}
+
+.container .contact_info .box .text {
+  margin-left: 1rem;
+  align-items: center;
+}
+
+.container .contact_form {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background: var(--bg-white);
+}
+
+.container .contact_form .input_box {
+  position: relative;
+}
+
+.container .contact_form .input_box input,
+.container .contact_form .input_box textarea {
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  margin: 0.4rem 0;
+  border: none;
+  border-bottom: 0.12rem solid var(--bg-black);
+  outline: none;
+  resize: none;
+}
+
+.contact_form .input_box span {
+  position: absolute;
+  left: 0;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: var(--text-black);
+}
+
+.contact_form .input_box input:focus ~ span,
+.contact_form .input_box input:valid ~ span,
+.contact_form .input_box textarea:focus ~ span,
+.contact_form .input_box textarea:valid ~ span {
+  color: var(--text-black);
+  font-size: 0.8rem;
+  transform: translateY(-1.2rem);
+}
+
+.contact_form .button {
+  width: 1rem;
+}
+
+/** Footer */
+.footer_wrapper {
+  background: var(--bg-primary);
+}
+
+/** Border */
 /* .header_wrapper {
   border: solid 3px green;
 } */
